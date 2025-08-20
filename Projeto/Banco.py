@@ -7,13 +7,13 @@ limite_saque = 3
 while True:
     print("""
           ==== Bem Vindo ao Pybank ====
-          [0] Entrar
-          [1] Sair
+          [1] Entrar
+          [0] Sair
           =============================
           """)
     opcao = input("Digite uma opção: ")
 
-    if opcao == "0":
+    if opcao == "1":
         while True:
             print("""
             ====== MENU ======
@@ -70,7 +70,7 @@ while True:
             else:
                 print("Escolha uma opção Válida!")
 
-    elif opcao == "1":
+    elif opcao == "0":
         print("Saindo do PyBank... Obrigado por usar nossos serviços!")
         break
 

@@ -1,4 +1,6 @@
 """
+Estruturas Condicionais
+
 imagine que você queira imprimir 'Aprovado(a)', caso o estudante tenha uma média superior ou igual a 7, e 'Reprovado(a)', caso a média seja inferior a 7
 """
 
