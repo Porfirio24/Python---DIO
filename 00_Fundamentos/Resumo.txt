@@ -1,0 +1,166 @@
+============================== 📘 CURSINHO DE PYTHON - RESUMO COMPLETO ==============================
+
+1. Convertendo Tipos
+
+Em Python, podemos converter valores entre diferentes tipos, como int,
+float e str. Isso é chamado de type casting.
+
+Exemplo: print(int(1.9734)) # converte para inteiro (trunca o valor)
+print(float(“10.10”)) # converte string para float print(str(10)) #
+converte número para string
+
+Curiosidade: ao converter float para int, o Python não arredonda, apenas
+remove a parte decimal.
+
+  ----------------------------------
+     # 2. Estruturas Condicionais
+  Permitem executar blocos de código
+     diferentes de acordo com uma
+              condição.
+  ----------------------------------
+     # 3. Estruturas de Repetição
+   Usadas para repetir instruções.
+
+  ## while Repete até a condição ser
+   falsa: opcao = -1 while opcao !=
+   0: opcao = int(input(“Digite [0]
+            para sair:”))
+
+   ## for Percorre elementos de um
+    iterável: texto = “Python” for
+     letra in texto: print(letra)
+
+   ## break e continue while True:
+    numero = int(input(“Informe um
+  número:”)) if numero == 10: break
+  # encerra o loop if numero % 2 ==
+     0: continue # pula os pares
+            print(numero)
+
+  Curiosidade: loops “for” em Python
+  iteram diretamente sobre coleções,
+     diferente de C/Java que usam
+               índice.
+  ----------------------------------
+
+4. Identação e Blocos
+
+Python usa espaços em branco para organizar blocos de código. Erro
+comum: usar espaços e tabulações misturados.
+
+Exemplo: def sacar(valor): saldo = 500 if saldo >= valor: print(“Saque
+realizado”) print(“Retire seu dinheiro”) print(“Obrigado por usar o
+banco”)
+
+Curiosidade: o padrão é usar 4 espaços para identação.
+
+  ----------------------------------
+  # 5. Operadores
+  ----------------------------------
+  # 6. Operadores de Identidade
+  Usados para verificar se duas
+  variáveis ocupam a mesma posição
+  de memória.
+
+  Exemplo: saldo = 1000 limite =
+  1000
+
+  print(saldo is limite) # False em
+  alguns casos (objetos diferentes)
+  print(saldo is not limite) # True
+
+  Curiosidade: diferente de “==”,
+  que compara valores, o “is”
+  compara identidade do objeto.
+  ----------------------------------
+
+7. Operadores Lógicos
+
+Permitem combinar expressões booleanas.
+
+-   and → só é True se todas forem True.
+-   or → é True se pelo menos uma for True.
+
+Exemplo: saldo = 1000 saque = 250 limite = 200 conta_especial = True
+
+    exp = saldo >= saque and saque <= limite or conta_especial and saldo >= saque
+    print(exp)
+
+Curiosidade: usar parênteses melhora a legibilidade da expressão.
+
+  ----------------------------------
+  # 8. Funções print() e input() -
+  input(): coleta dados digitados
+  pelo usuário. - print(): exibe
+  informações na tela.
+  ----------------------------------
+  # 9. Strings (Parte 1) - Métodos
+  básicos Python possui diversos
+  métodos úteis para manipular
+  strings.
+
+  Exemplo: nome = “gUIlherME”
+  print(nome.upper()) # maiúsculas
+  print(nome.lower()) # minúsculas
+  print(nome.title()) # primeira
+  letra maiúscula
+
+  texto = ” Olá mundo! ”
+  print(texto.strip()) # remove
+  espaços extras
+
+  menu = “Python”
+  print(menu.center(14, “#”)) #
+  centraliza
+
+  Curiosidade: strings em Python são
+  imutáveis, ou seja, não podem ser
+  alteradas diretamente.
+  ----------------------------------
+
+10. Strings (Parte 2) - Formatação
+
+Formas de inserir variáveis em strings:
+
+Exemplo: nome = “Guilherme” idade = 28 saldo = 45.435
+
+    print("Nome: %s Idade: %d" % (nome, idade))   # estilo antigo
+    print("Nome: {} Idade: {}".format(nome, idade))  # estilo format()
+    print(f"Nome: {nome} Idade: {idade} Saldo: {saldo:.2f}")  # f-string
+
+Curiosidade: f-strings são mais rápidas e legíveis, recomendadas no
+Python moderno.
+
+  ----------------------------------
+  # 11. Strings (Parte 3) -
+  Fatiamento Permite acessar partes
+  de uma string.
+  ----------------------------------
+  # 12. Strings (Parte 4) -
+  Multilinhas Podemos criar strings
+  de várias linhas com aspas
+  triplas.
+
+  Exemplo: mensagem = f”“” Olá meu
+  nome é {nome}, Estou aprendendo
+  Python. ““” print(mensagem)
+  ----------------------------------
+
+13. Tipos de Dados
+
+Principais tipos em Python: - int (inteiro) - float (decimal) - bool
+(booleano: True/False) - str (string)
+
+Exemplo: print(11 + 10) print(1.5 + 0.5) print(True) print(“Python”)
+
+------------------------------------------------------------------------
+
+14. Variáveis e Constantes
+
+Variáveis podem mudar, constantes são convenções escritas em MAIÚSCULAS.
+
+Exemplo: nome = “Guilherme” idade = 28 BRAZILIAN_STATES = [“SP”, “RJ”,
+“SC”, “RS”] print(BRAZILIAN_STATES)
+
+Curiosidade: Python não tem constantes “reais”, mas usamos maiúsculas
+para indicar que a variável não deve ser alterada.
