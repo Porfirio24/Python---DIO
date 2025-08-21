@@ -1,0 +1,70 @@
+Resumo: Listas em Python
+
+As listas em Python são estruturas de dados muito versáteis que permitem armazenar uma coleção de elementos em uma única variável. 
+São **mutáveis**, ou seja, podem ser alteradas após a sua criação.
+
+--------------------------------------------------
+1. Criação de Listas
+- Definidas com colchetes []
+- Podem conter diferentes tipos de dados
+
+Exemplo:
+    frutas = ["maçã", "banana", "laranja"]
+    numeros = [1, 2, 3, 4, 5]
+
+--------------------------------------------------
+2. Acesso a Elementos
+- Usa índices, começando do 0
+- Índices negativos acessam do fim para o início
+
+Exemplo:
+    print(frutas[0])   # maçã
+    print(frutas[-1])  # laranja
+
+--------------------------------------------------
+3. Fatiamento (Slicing)
+- Permite acessar partes da lista usando [inicio:fim:passo]
+
+Exemplo:
+    print(numeros[1:4])   # [2, 3, 4]
+    print(numeros[:3])    # [1, 2, 3]
+    print(numeros[::-1])  # [5, 4, 3, 2, 1] (inversão)
+
+--------------------------------------------------
+4. Iterando em Listas
+- Podemos percorrer listas com loops
+
+Exemplo:
+    for fruta in frutas:
+        print(fruta)
+
+--------------------------------------------------
+5. Métodos de Listas
+- append(x) → adiciona ao final
+- insert(i, x) → insere em posição específica
+- remove(x) → remove a primeira ocorrência
+- pop([i]) → remove e retorna o item (último por padrão)
+- sort() → ordena a lista
+- reverse() → inverte a lista
+
+Exemplo:
+    frutas.append("uva")
+    frutas.remove("banana")
+    print(frutas)
+
+--------------------------------------------------
+6. Operações úteis
+- len(lista) → quantidade de elementos
+- in → verifica se existe na lista
+- + → concatenação
+
+Exemplo:
+    print(len(frutas))        # 3
+    print("uva" in frutas)    # True
+    nova_lista = frutas + ["melancia"]
+
+--------------------------------------------------
+📌 Curiosidades
+- Diferente de tuplas, as listas podem ser modificadas.
+- Podem conter listas dentro de listas (listas aninhadas).
+- São amplamente utilizadas para manipulação de dados, coleções e iterações.
